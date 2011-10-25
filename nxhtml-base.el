@@ -50,7 +50,7 @@
 ;; (version< "2.09beta" "2.08")
 ;; (version< "2.09beta" "2.09")
 (defconst nxhtml-menu:version "2.09beta")
-(when (and t (file-directory-p "c:/EmacsW32/"))
+(when (and (memq system-type '(ms-dos windows-ny cygwin)) (file-directory-p "c:/EmacsW32/"))
   (setq message-log-max t)
   (setq debug-on-error t))
 
